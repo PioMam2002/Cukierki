@@ -31,7 +31,6 @@
                   B:  <input type="number" name="number" id="n3"><br>
                   <button  onclick="rgb()" id="sub">Zamówienie</button><br>
                   <p id="text">Twoje zamówienie</p><br>
-                  <p id="text2"></p><br>
                   <button id="button1">kolor</button><br>
 
           
@@ -67,6 +66,7 @@
 
 </body> 
 <script>
+    function rgb(){
     let ksztalt = document.getElementById('ksztalt').value;
         let text = document.getElementById('text');
         let text2 = "";
@@ -83,7 +83,9 @@
             text2="twoje zamówienie to inny";
 
         }
-        text.innerText= text2 ;      
+        text.innerText= text2 ;   
+    }  
+
 </script>
 
 </html>
